@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LaViLa"
+version = "1.0.0"
+description = "Learning Video Representations from Large Language Models. CVPR 2023"
+readme = "README.md"
+requires-python = ">=3.8.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "timm>=0.5.4",
+    "torch>=1.10.1",
+    "torchvision>=0.11.2",
+    "decord>=0.6.0",
+    "einops>=0.4.1",
+    "pandas>=1.4.2",
+    "pytorchvideo>=0.1.5",
+    "transformers>=4.27",
+    "ftfy>=4.4.3",
+    "spacy>=3.4.1",
+    "scikit-learn>=1.1.1"
+]
+
+[project.urls]
+"website" = "https://facebookresearch.github.io/LaViLa/"
+
+[tool.setuptools]
+packages = ["lavila"]
